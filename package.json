@@ -1,0 +1,26 @@
+{
+  "name": "iden3.github.io",
+  "version": "1.0.0",
+  "description": "iden3 website",
+  "author": "iden3",
+  "scripts": {
+    "start": "live-server --port=3000 --mount=/:src --watch=src"
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "live-server": "^1.2.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint --fix"
+    ]
+  }
+}
