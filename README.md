@@ -1,4 +1,4 @@
-# Hermez.io
+# iden3.io
 
 Source code for the iden3 website.
 
