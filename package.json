@@ -4,14 +4,16 @@
   "description": "iden3 website",
   "author": "iden3",
   "scripts": {
+    "prepare": "husky install",
     "start": "live-server --port=3000 --mount=/:src --watch=src"
   },
   "devDependencies": {
-    "husky": "^4.3.0",
-    "lint-staged": "^10.4.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
     "live-server": "^1.2.1",
-    "stylelint": "^13.6.1",
-    "stylelint-config-standard": "^20.0.0"
+    "prettier": "^2.5.0",
+    "stylelint": "^14.1.0",
+    "stylelint-prettier": "^2.0.0"
   },
   "husky": {
     "hooks": {
@@ -20,6 +22,7 @@
   },
   "lint-staged": {
     "*.css": [
+      "prettier --write",
       "stylelint --fix"
     ]
   }
