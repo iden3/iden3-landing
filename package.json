@@ -25,5 +25,8 @@
       "prettier --write",
       "stylelint --fix"
     ]
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^24.0.0"
   }
 }
