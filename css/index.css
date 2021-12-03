@@ -3,8 +3,8 @@
 
 /* BROWSER OVERRIDES */
 button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
+  appearance: none;
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -20,8 +20,18 @@ a {
 
 /* DEFAULT STYLES */
 body {
-  font-family: "Modern Era", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    "Modern Era",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   margin: 0;
   font-size: 24px;
   position: relative;
@@ -47,15 +57,15 @@ body {
   padding-top: 1rem;
 }
 
-.section--primary {
+.section-primary {
   background-color: var(--primary);
 }
 
-.section--secondary {
+.section-secondary {
   background-color: var(--secondary);
 }
 
-.section--identity-wallet {
+.section-identity-wallet {
   padding-bottom: 0;
 }
 
@@ -114,7 +124,6 @@ body {
 }
 
 .company-value-icon {
-  margin-bottom: 1rem;
   height: 80px;
   margin-bottom: 2.5rem;
 }
@@ -200,6 +209,58 @@ body {
   align-self: center;
 }
 
+.footer-content {
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+}
+
+.footer-column {
+  max-width: 490px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.footer-cta {
+  font-size: 2.125rem;
+  line-height: 44px;
+  margin: 0;
+}
+
+.footer-link-group {
+  font-size: 1.125rem;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-link-group:not(:last-of-type) {
+  margin-bottom: 32px;
+}
+
+.footer-link-header {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.footer-link {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.zero-kims-logo {
+  height: 32px;
+  margin-bottom: 8px;
+}
+
 .button {
   font-weight: 600;
   font-size: 1.25rem;
@@ -213,7 +274,7 @@ body {
 }
 
 .button:hover {
-  opacity: 85%;
+  opacity: 0.85;
 }
 
 /* RESPONSIVE BEHAVIOR */
@@ -222,7 +283,7 @@ body {
     padding: 5rem 0;
   }
 
-  .section--identity-wallet {
+  .section-identity-wallet {
     padding-bottom: 0;
   }
 
@@ -255,7 +316,7 @@ body {
     padding: 8rem 0;
   }
 
-  .section--identity-wallet {
+  .section-identity-wallet {
     padding-bottom: 0;
   }
 
