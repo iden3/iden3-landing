@@ -2,6 +2,16 @@
 @import "variables.css";
 
 /* BROWSER OVERRIDES */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 button {
   appearance: none;
   text-decoration: none;
@@ -51,7 +61,7 @@ body {
 .section {
   width: 100%;
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 3rem 0.75rem;
 }
 
 .cover {
@@ -71,17 +81,17 @@ body {
 }
 
 .section-title {
-  font-size: 4rem;
-  line-height: 72px;
+  font-size: 2.5rem;
+  line-height: 54px;
   font-weight: 700;
   max-width: 980px;
-  margin: 0 auto 3.75rem;
+  margin: 0 auto 3rem;
   color: var(--white);
 }
 
 .section-text {
-  font-size: 1.5rem;
-  line-height: 44px;
+  font-size: 1.25rem;
+  line-height: 40px;
   max-width: 960px;
   margin: 0 auto;
   color: var(--grey);
@@ -100,9 +110,9 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  height: 48px;
-  margin-left: 5.125rem;
-  margin-top: 3.25rem;
+  height: 42px;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
   align-self: flex-start;
 }
 
@@ -110,22 +120,23 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  margin-top: 1.75rem;
+  margin-top: 5rem;
 }
 
 .hero-title {
-  margin-top: -5.5rem;
+  margin-top: -1rem;
   margin-bottom: 1.5rem;
 }
 
 .company-values {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   max-width: 960px;
   width: 100%;
   margin: auto;
-  margin-top: 7.5rem;
+  margin-top: 3.5rem;
 }
 
 .company-value {
@@ -134,9 +145,13 @@ body {
   align-items: center;
 }
 
+.company-value:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+
 .company-value-icon {
   height: 80px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .company-value-text {
@@ -148,29 +163,31 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 980px;
-  margin: 7.5rem auto 0;
+  margin: 2.5rem auto 0;
 }
 
 .tech-feature {
   width: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 .tech-feature-title {
-  font-size: 2.125rem;
+  font-size: 1.75rem;
   font-weight: 600;
   line-height: 44px;
-  width: 50%;
+  width: 100%;
   margin: 0;
   color: var(--white);
   text-align: left;
+  margin-bottom: 1.5rem;
 }
 
 .tech-feature-description {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 30px;
-  width: 50%;
+  width: 100%;
   color: var(--white);
   text-align: left;
 }
@@ -193,12 +210,13 @@ body {
 }
 
 .iden3-feature-list {
+  width: 100%;
   font-size: 1.125rem;
   color: var(--white);
   text-align: left;
-  column-count: 2;
+  column-count: 1;
   column-gap: 125px;
-  width: 980px;
+  max-width: 980px;
   margin: auto;
 }
 
@@ -222,6 +240,7 @@ body {
 
 .footer-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   color: var(--white);
 }
@@ -239,6 +258,7 @@ body {
   font-size: 2.125rem;
   line-height: 44px;
   margin: 0;
+  margin-bottom: 3rem;
 }
 
 .footer-link-group {
@@ -250,7 +270,7 @@ body {
 }
 
 .footer-link-group:not(:last-of-type) {
-  margin-bottom: 32px;
+  margin-bottom: 1rem;
 }
 
 .footer-link-header {
@@ -288,39 +308,74 @@ body {
   opacity: 0.85;
 }
 
-/* RESPONSIVE BEHAVIOR */
-@media (min-width: 380px) {
+@media (min-width: 576px) {
+  .section-title {
+    font-size: 3.5rem;
+    line-height: 64px;
+    margin: 0 auto 3.75rem;
+  }
+
+  .iden3-logo {
+    height: 48px;
+    margin-left: 3rem;
+    margin-top: 3.25rem;
+  }
+
+  .company-values {
+    flex-direction: row;
+    margin-top: 5rem;
+  }
+
+  .company-value:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+
+  .company-value-icon {
+    margin-bottom: 2.5rem;
+  }
+
+  .tech-features {
+    margin: 7.5rem auto 0;
+  }
+
+  .tech-feature {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tech-feature-title {
+    font-size: 2.125rem;
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .tech-feature-description {
+    width: 50%;
+  }
+
+  .footer-link-group:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  .footer-link-header {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
   .section {
-    padding: 5rem 0;
-  }
-
-  .section-identity-wallet {
-    padding-bottom: 0;
-  }
-
-  .cover {
-    padding-top: 0;
+    padding: 8rem 3rem;
   }
 
   .section-title {
-    font-size: 4rem;
-    line-height: 1.21;
+    font-size: 4.5rem;
+    line-height: 72px;
+    margin: 0 auto 3.75rem;
   }
 
   .section-text {
     font-size: 1.5rem;
-    line-height: 1.67;
-  }
-
-  .button {
-    font-size: 1.5rem;
-    padding: 1.75rem 4rem;
-  }
-}
-
-@media (min-width: 769px) {
-  .section {
-    padding: 8rem 0;
+    line-height: 44px;
   }
 
   .section-identity-wallet {
@@ -330,5 +385,37 @@ body {
   .cover {
     padding-top: 0;
     padding-bottom: 10.75rem;
+  }
+
+  .hero-bg {
+    margin-top: 1.75rem;
+  }
+
+  .hero-title {
+    margin-top: -5.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-content {
+    flex-direction: row;
+  }
+
+  .footer-cta {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .iden3-logo {
+    margin-left: 5.125rem;
+  }
+
+  .iden3-feature-list {
+    column-count: 2;
+  }
+
+  .company-values {
+    flex-direction: row;
+    margin-top: 7.5rem;
   }
 }
