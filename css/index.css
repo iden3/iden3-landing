@@ -197,7 +197,7 @@ body {
 }
 
 .tech-feature-description p:not(:last-of-type) {
-  margin-bottom: 0.75rem;
+  margin-bottom: 2rem;
 }
 
 .tech-feature-separator {
@@ -209,6 +209,16 @@ body {
   margin-bottom: 3.25rem;
 }
 
+.tech-feature-list {
+  padding-left: 1rem;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.tech-feature-list li:not(:last-of-type) {
+  margin-bottom: 1.15rem;
+}
+
 .iden3-feature-list {
   width: 100%;
   font-size: 1.125rem;
@@ -216,7 +226,7 @@ body {
   text-align: left;
   column-count: 1;
   column-gap: 125px;
-  max-width: 980px;
+  max-width: 1020px;
   margin: auto;
 }
 
@@ -224,12 +234,6 @@ body {
   margin: 0;
   line-height: 32px;
   padding: 0.5rem 0;
-}
-
-/* Empty space to fix having different number of <li> items in the columns */
-.iden3-feature-spacer {
-  height: 1rem;
-  visibility: hidden;
 }
 
 .identity-wallet-image {
@@ -242,6 +246,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: var(--white);
 }
 
@@ -251,7 +256,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
   flex-shrink: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .footer-cta {
@@ -266,7 +271,7 @@ body {
   line-height: 30px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .footer-link-group:not(:last-of-type) {
@@ -368,7 +373,7 @@ body {
   }
 
   .section-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 72px;
     margin: 0 auto 3.75rem;
   }
@@ -392,12 +397,22 @@ body {
   }
 
   .hero-title {
-    margin-top: -5.5rem;
+    max-width: 960px;
+    margin-top: -3.5rem;
     margin-bottom: 1.5rem;
   }
 
   .footer-content {
     flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    text-align: left;
+  }
+
+  .footer-link-group {
+    align-items: flex-end;
   }
 
   .footer-cta {
