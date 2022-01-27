@@ -5,88 +5,93 @@
     <link rel="icon" href="img/favicon.ico" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/shared.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>iden3</title>
     <meta name="title" content="iden3" />
     <meta
       name="description"
-      content="iden3 is a next-generation private access control based on self-sovereign identity, designed for decentralised and trust-minimised environments."
+      content="iden3 is a next-generation private access control based on self-sovereign identity, designed for decentralised and trust-minimised environments"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://iden3.io" />
     <meta property="og:title" content="iden3" />
     <meta
       property="og:description"
-      content="iden3 is a next-generation private access control based on self-sovereign identity, designed for decentralised and trust-minimised environments."
+      content="iden3 is a next-generation private access control based on self-sovereign identity, designed for decentralised and trust-minimised environments"
     />
   </head>
 
   <body>
-    <section class="section section-primary cover">
-      <div class="section-container">
-        <img class="iden3-logo" src="img/iden3-logo.svg" alt="iden3 logo" />
-        <img class="hero-bg" src="img/hero-bg.svg" alt="Hero background" />
-        <h1 class="section-title hero-title">
-          Prove your access rights, not your identity.
-        </h1>
-        <p class="section-text">
-          iden3 is a next-generation private access control based on
-          self-sovereign identity, designed for decentralised and
-          trust-minimised environments.
-        </p>
+    <header class="header">
+      <div class="section-content">
+        <div class="header-content">
+          <img src="img/logos/iden3.svg" class="iden3-logo" />
+          <nav>
+            <ul class="header-nav">
+              <li class="header-nav-link">
+                <a class="link link-active">Identity Protocol</a>
+              </li>
+              <li class="header-nav-link">
+                <a class="link" href="/circom.html">Circom 2.0</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </section>
-    <section class="section section-secondary">
-      <div class="section-container">
-        <h1 class="section-title">Privacy for all.</h1>
-        <p class="section-text">
-          Everyone has the right to liberty and equality, the right freely to
-          participate in their community, and the right to privacy.
-        </p>
-        <p class="section-text">
-          The aim of the iden3 protocol is to empower people and create a more
-          inclusive and egalitarian foundation for better human relationships
-          through open-source cryptography and decentralised technologies.
-        </p>
-        <div class="company-values">
-          <div class="company-value">
-            <img
-              class="company-value-icon"
-              src="img/icons/privacy.svg"
-              alt="Privacy by design"
-            />
-            <p class="company-value-text">Privacy by design</p>
+    </header>
+    <div class="hero-bg">
+      <section class="section-hero">
+        <div class="section-content">
+          <div class="hero-content">
+            <h1 clas>Prove your access rights, not your identity</h1>
+            <p>
+              iden3 is a next-generation private access control based on
+              self-sovereign identity, designed for decentralised and
+              trust-minimised environments.
+            </p>
           </div>
-          <div class="company-value">
-            <img
-              class="company-value-icon"
-              src="img/icons/decentralised.svg"
-              alt="Privacy by design"
-            />
-            <p class="company-value-text">Decentralised</p>
+        </div>
+      </section>
+    </div>
+    <section class="section section-grey">
+      <div class="section-content">
+        <h2 class="text-center">Privacy for all</h2>
+        <div class="privacy-description">
+          <p class="text-center">
+            Everyone has the right to liberty and equality, the right freely to
+            participate in their community, and the right to privacy.
+          </p>
+          <p class="text-center">
+            The aim of the iden3 protocol is to empower people and create a more
+            inclusive and egalitarian foundation for better human relationships
+            through open-source cryptography and decentralised technologies.
+          </p>
+        </div>
+        <hr class="separator" />
+        <div class="small-feature-list">
+          <div class="small-feature">
+            <img src="img/icons/privacy.svg" />
+            <p class="body-1 small-feature-text">Privacy by design</p>
           </div>
-          <div class="company-value">
-            <img
-              class="company-value-icon"
-              src="img/icons/open-source.svg"
-              alt="Privacy by design"
-            />
-            <p class="company-value-text">Open source</p>
+          <div class="small-feature">
+            <img src="img/icons/decentralised.svg" />
+            <p class="body-1 small-feature-text">Decentralised</p>
+          </div>
+          <div class="small-feature">
+            <img src="img/icons/open-sourcce.svg" />
+            <p class="body-1 small-feature-text">Open source</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section-primary">
-      <div class="section-container">
-        <h1 class="section-title">
-          Future-proof tech stack for self-sovereign identity.
-        </h1>
-        <div class="tech-features">
-          <div class="tech-feature">
-            <h2 class="tech-feature-title">
-              Censorship-resistant infrastructure
-            </h2>
-            <div class="tech-feature-description">
+    <section class="section section-black">
+      <div class="section-content">
+        <h2>Future-proof tech stack for self-sovereign identity</h2>
+        <div class="feature">
+          <h3>Censorship-resistant infrastructure</h3>
+          <div class="flex-layout">
+            <div class="flex-col">
               <p>
                 The iden3 protocol is based on Ethereum and thus inherits its
                 properties such as a high degree of decentralisation and a
@@ -95,10 +100,14 @@
               <p>
                 To provide the best possible user experience and make
                 self-sovereign identity available to all, the protocol will
-                include an ID sponsor module. This component will allow
-                developers to design their applications in such a way that a
-                developer-run account covers all the costs of interacting with
-                the blockchain for users.
+                include an ID sponsor module.
+              </p>
+            </div>
+            <div class="flex-col">
+              <p>
+                This component will allow developers to design their
+                applications in such a way that a developer-run account covers
+                all the costs of interacting with the blockchain for users.
               </p>
               <p>
                 Additionally, the protocol will soon be scalable at Layer 2
@@ -108,10 +117,12 @@
               </p>
             </div>
           </div>
-          <hr class="tech-feature-separator" />
-          <div class="tech-feature">
-            <h2 class="tech-feature-title">Battle-tested cryptography</h2>
-            <div class="tech-feature-description">
+        </div>
+        <hr class="separator" />
+        <div class="feature">
+          <h3>Battle-tested cryptography</h3>
+          <div class="flex-layout">
+            <div class="flex-col">
               <p>
                 The use of the Zero-Knowledge proving system zk-SNARK defines
                 not only a security standard (as this cryptography is the
@@ -121,9 +132,14 @@
               <p>
                 Zero-Knowledge Proofs based on zk-SNARK allows that any
                 computational condition can be represented by an arithmetic
-                circuit. This important property offers universality and
-                flexibility for zkProof that can be generated to prove anything
-                about identity (with quick verification time).
+                circuit.
+              </p>
+            </div>
+            <div class="flex-col">
+              <p>
+                This important property offers universality and flexibility for
+                zkProof that can be generated to prove anything about identity
+                (with quick verification time).
               </p>
               <p>
                 iden3 comes with a Rapid-PLONK scheme that offers a single
@@ -132,10 +148,12 @@
               </p>
             </div>
           </div>
-          <hr class="tech-feature-separator" />
-          <div class="tech-feature">
-            <h2 class="tech-feature-title">Practical standards</h2>
-            <div class="tech-feature-description">
+        </div>
+        <hr class="separator" />
+        <div class="feature">
+          <h3>Practical standards</h3>
+          <div class="flex-layout">
+            <div class="flex-col">
               <p>
                 iden3 has developed a novel proof-query language that allows
                 simple configuration of the type of identity claims required for
@@ -146,6 +164,8 @@
                 identity and JSON-LD schemas are used to describe data of the
                 identity claims.
               </p>
+            </div>
+            <div class="flex-col">
               <p>
                 iden3 will support DID, JSON-LD and JSON schema to be
                 interoperable with W3C standards for Verifiable Credentials.
@@ -157,187 +177,262 @@
               </p>
             </div>
           </div>
-          <hr class="tech-feature-separator" />
-          <div class="tech-feature">
-            <h2 class="tech-feature-title">Versatility of applications</h2>
-            <div class="tech-feature-description">
+        </div>
+        <hr class="separator" />
+        <div class="feature">
+          <h3>Versatility of applications</h3>
+          <div class="flex-layout">
+            <div class="flex-col">
               <p>
                 The main idea of the iden3 protocol is that each identity is
                 self-soverign and can issue claims on another identity (which
-                can be for an individual, an organisation or a system /
-                machine).
+                can be for an individual, an organisation or a system/machine).
               </p>
               <p>
                 This simple and unique characteristics can lead to creation
                 complex adaptive systems and the following use cases:
               </p>
-              <ul class="tech-feature-list">
-                <li><p>Decentralised trust models / web-of-trust</p></li>
-                <li>
+              <ul class="checklist feature-checklist">
+                <li class="checklist-item">
+                  <img
+                    src="img/icons/check.svg"
+                    class="checklist-item-bullet"
+                  />
+                  <p>Decentralised trust models / web-of-trust</p>
+                </li>
+                <li class="checklist-item">
+                  <img
+                    src="img/icons/check.svg"
+                    class="checklist-item-bullet"
+                  />
                   <p>Decentralised ID verification / proof-of-personhood</p>
                 </li>
-                <li><p>Reputation-based governance models</p></li>
-                <li><p>Decentralised voting systems</p></li>
-                <li><p>Interaction with DeFi / dApps / Web3</p></li>
-                <li><p>Decentralised payment identifiers</p></li>
-                <li><p>Private access control</p></li>
-                <li><p>Authentication and authorisation</p></li>
-                <li><p>Signing documents and private messaging</p></li>
-                <li><p>Supply chain and IoT</p></li>
-                <li><p>NFT ownership</p></li>
+                <li class="checklist-item">
+                  <img
+                    src="img/icons/check.svg"
+                    class="checklist-item-bullet"
+                  />
+                  <p>Decentralised voting systems</p>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-col">
+              <ul class="checklist">
+                <li class="checklist-item">
+                  <img
+                    src="img/icons/check.svg"
+                    class="checklist-item-bullet"
+                  />
+                  <p>Interaction with DeFi / dApps / Web3</p>
+                </li>
+                <li class="checklist-item">
+                  <img
+                    src="img/icons/check.svg"
+                    class="checklist-item-bullet"
+                  />
+                  <p>Decentralised payment identifiers</p>
+                </li>
+                <li class="checklist-item">
+                  <img
+                    src="img/icons/check.svg"
+                    class="checklist-item-bullet"
+                  />
+                  <p>Private access control</p>
+                </li>
+                <li class="checklist-item">
+                  <img
+                    src="img/icons/check.svg"
+                    class="checklist-item-bullet"
+                  />
+                  <p>Authentication and authorisation</p>
+                </li>
+                <li class="checklist-item">
+                  <img
+                    src="img/icons/check.svg"
+                    class="checklist-item-bullet"
+                  />
+                  <p>Signing documents and private messaging</p>
+                </li>
+                <li class="checklist-item">
+                  <img
+                    src="img/icons/check.svg"
+                    class="checklist-item-bullet"
+                  />
+                  <p>Supply chain and IoT</p>
+                </li>
+                <li class="checklist-item">
+                  <img
+                    src="img/icons/check.svg"
+                    class="checklist-item-bullet"
+                  />
+                  <p>NFT ownership</p>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section-secondary">
-      <div class="section-container">
-        <h1 class="section-title">
-          iden3 features for simple interaction with Web3.
-        </h1>
-        <ul class="iden3-feature-list">
-          <li>
-            <p class="iden3-feature-text">
-              Self-soverign identity generation and management.
-            </p>
-          </li>
-          <li>
-            <p class="iden3-feature-text">
-              zkProofs generation and verification.
-            </p>
-          </li>
-          <li><p class="iden3-feature-text">Proof-query language.</p></li>
-          <li>
-            <p class="iden3-feature-text">Authentication and authorisation.</p>
-          </li>
-          <li>
-            <p class="iden3-feature-text">
-              Multi-identifier ID model (with cross-auth methods).
-            </p>
-          </li>
-          <li>
-            <p class="iden3-feature-text">
-              ID profile based on verifiable claims and documents.
-            </p>
-          </li>
-          <li>
-            <p class="iden3-feature-text">
-              Mobile ID wallet app reference + mobile SDK.
-            </p>
-          </li>
-          <li>
-            <p class="iden3-feature-text">
-              P2P communication between identities.
-            </p>
-          </li>
-          <li>
-            <p class="iden3-feature-text">
-              Claim lifecycle management (issuance, revocation).
-            </p>
-          </li>
-          <li><p class="iden3-feature-text">Expressive claims syntax.</p></li>
-          <li>
-            <p class="iden3-feature-text">Decentralised naming service.</p>
-          </li>
-          <li>
-            <p class="iden3-feature-text">Key rotation and ID recovery.</p>
-          </li>
-          <li>
-            <p class="iden3-feature-text">
-              ID sponsor model (cost-free solution for users).
-            </p>
-          </li>
-          <li>
-            <p class="iden3-feature-text">
-              Interoperability with DID and Verifiable Credentials standards
-              from W3C.
-            </p>
-          </li>
-        </ul>
-        <a href="https://github.com/iden3" target="_blank" class="button">
-          iden3 GitHub →
-        </a>
-      </div>
-    </section>
-    <section class="section section-primary">
-      <div class="section-container">
-        <h1 class="section-title">
-          Powerful language to build zero-knowledge circuits. Circom 2.0.
-        </h1>
-        <p class="section-text">
-          Circom is the developer tool of choice for building zero-knowledge
-          applications. It was created by iden3 and its effectiveness and
-          reliability has been proven in implementations such as Polygon Hermez,
-          Dark Forest, Zkopru and Tornado Cash.
-        </p>
-        <a
-          href="https://github.com/iden3/circom"
-          target="_blank"
-          class="button"
-        >
-          Circom GitHub →
-        </a>
-      </div>
-    </section>
-    <section class="section section-secondary section-identity-wallet">
-      <div class="section-container">
-        <h1 class="section-title">Intuitive identity control.</h1>
-        <p class="section-text">
-          iden3 identity wallet app (for iOS and Android) is an open reference
-          for end-users to receive trusted claims and generate zkProofs for
-          private access. It also allows direct communication with another
-          identity.
-        </p>
-        <img
-          class="identity-wallet-image"
-          src="img/identity-wallet.svg"
-          alt="Identity wallet"
-        />
-      </div>
-    </section>
-    <footer class="section section-primary">
-      <div class="section-container">
-        <div class="footer-content">
-          <div class="footer-column">
-            <h3 class="footer-cta">
-              iden3 supports human progress initiatives.<br />
-              Contact us.
-            </h3>
+    <section class="section section-grey">
+      <div class="section-content">
+        <h2>iden3 features for simple interaction with Web3</h2>
+        <div class="flex-layout">
+          <div class="flex-col">
+            <ul class="checklist">
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Self-soverign identity generation and management</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>zkProofs generation and verification</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Proof-query language</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Authentication and authorisation</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Multi-identifier ID model (with cross-auth methods)</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>ID profile based on verifiable claims and documents</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Mobile ID wallet app reference + mobile SDK</p>
+              </li>
+            </ul>
           </div>
-          <div class="footer-column">
-            <div class="footer-link-group">
-              <p class="footer-link-header">Email</p>
-              <a
-                href="mailto:hello@iden3.io"
-                target="_blank"
-                class="footer-link"
-              >
-                hello(at)iden3.io
-              </a>
-            </div>
-            <div class="footer-link-group">
-              <p class="footer-link-header">Twitter</p>
-              <a
-                href="https://twitter.com/identhree"
-                target="_blank"
-                class="footer-link"
-              >
-                @identhree
-              </a>
-            </div>
-            <div class="footer-link-group">
-              <img
-                class="zero-kims-logo"
-                src="img/0kims-logo.svg"
-                alt="0KIMS Association logo"
-              />
-              <p class="footer-text">
-                <a href="http://0kims.org" target="_blank" class="footer-link">
-                  0KIMS Association</a
-                >, 2021
-              </p>
-            </div>
+          <div class="flex-col">
+            <ul class="checklist">
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>P2P communication between identities</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Claim lifecycle management (issuance, revocation)</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Expressive claims syntax</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Decentralised naming service</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Key rotation and ID recovery</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>ID sponsor model (cost-free solution for users)</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>
+                  Interoperability with DID and Verifiable Credentials standards
+                  from W3C
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="features-button-container">
+          <a
+            href="https://github.com/iden3"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button-link"
+          >
+            iden3 GitHub&nbsp;&nbsp;→
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section section-black">
+      <div class="section-content">
+        <h2 class="text-center">
+          Powerful language to build zero-knowledge circuits: Circom 2.0
+        </h2>
+          <p class="text-center">
+            Circom is the developer tool of choice for building zero-knowledge
+            applications. It was created by iden3 and its effectiveness and
+            reliability have been proven in implementations such as Polygon
+            Hermez, Dark Forest, Zkopru and Tornado Cash.
+          </p>
+        </div>
+        <div class="circom-button-container">
+          <a href="/circom.html" class="button-link">
+            More about Circom 2.0&nbsp;&nbsp;→
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section section-grey">
+      <div class="section-content">
+        <h2 class="text-center">Intuitive identity control</h2>
+          <p class="text-center">
+            iden3 identity wallet app (for iOS and Android) is an open reference
+            for end-users to receive trusted claims and generate zkProofs for
+            private access. It also allows direct communication with another
+            identity.
+          </p>
+        <div class="identity-wallet-image-container">
+          <img src="img/identity-wallet.svg" alt="Identity wallet" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="section section-black">
+      <div class="section-content footer-content">
+        <div class="footer-col">
+          <h2 class="footer-cta">
+            iden3 supports human progress initiatives.<br />
+            Contact us.
+          </h2>
+        </div>
+        <div class="footer-col">
+          <div class="footer-link-group">
+            <p class="footer-link-header">Email</p>
+            <a
+              href="mailto:hello@iden3.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              hello(at)iden3.io
+            </a>
+          </div>
+          <div class="footer-link-group">
+            <p class="footer-link-header">Twitter</p>
+            <a
+              href="https://twitter.com/identhree"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              @identhree
+            </a>
+          </div>
+          <div class="footer-link-group">
+            <img
+              class="zero-kims-logo"
+              src="img/logos/0kims.svg"
+              alt="0KIMS Association logo"
+            />
+            <p class="footer-text">
+              <a href="http://0kims.org" target="_blank" class="footer-link">
+                0KIMS Association</a
+              >, 2022
+            </p>
           </div>
         </div>
       </div>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/circom.css" />
+    <title>iden3 | Circom</title>
+    <meta name="title" content="iden3 | Circom" />
+    <meta
+      name="description"
+      content="Circom is a circuit programming language and a compiler that allows programmers to design and create their own arithmetic circuits for ZK proofs"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iden3.io/circom" />
+    <meta property="og:title" content="iden3 | Circom" />
+    <meta
+      property="og:description"
+      content="Circom is a circuit programming language and a compiler that allows programmers to design and create their own arithmetic circuits for ZK proofs"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="section-content">
+        <div class="header-content">
+          <img src="img/logos/iden3.svg" class="iden3-logo" />
+          <nav>
+            <ul class="header-nav">
+              <li class="header-nav-link">
+                <a class="link" href="/">Identity Protocol</a>
+              </li>
+              <li class="header-nav-link">
+                <a class="link link-active">Circom 2.0</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="hero-bg">
+      <section class="section-hero">
+        <div class="section-content">
+          <img src="img/circom-logo.svg" class="circom-logo" />
+          <div class="hero-content">
+            <h1 clas>
+              Efficient circuit framework for programmable zero-knowledge
+            </h1>
+            <p>
+              Circom is a circuit programming language and a compiler that
+              allows programmers to design and create their own arithmetic
+              circuits for ZK proofs.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="section section-grey">
+      <div class="section-content">
+        <h2>Circom 2.0</h2>
+        <h3>Circuit Compiler for Zk Proving Systems</h3>
+        <div class="flex-layout circom-description">
+          <div class="flex-col">
+            <p>
+              Circom is a novel domain-specific language for defining arithmetic
+              circuits and its associated compiler written in Rust language.
+            </p>
+            <p>
+              Our open-source library of templates called CircomLib is publicly
+              available to practitioners and developers. The library contains
+              multiple circuit templates that have been reviewed and proven to
+              work by our research team.
+            </p>
+          </div>
+          <div class="flex-col">
+            <p>
+              The implementations of proving systems are also available in our
+              libraries including
+              <a
+                class="inline-link"
+                href="https://github.com/iden3/snarkjs"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SnarkJS</a
+              >, written in Javascript and Pure Web Assembly,
+              <a
+                class="inline-link"
+                href="https://github.com/iden3/wasmsnark"
+                target="_blank"
+                rel="noopener noreferrer"
+                >wasmnark</a
+              >
+              written in native Web Assembly,
+              <a
+                class="inline-link"
+                href="https://github.com/iden3/rapidsnark"
+                target="_blank"
+                rel="noopener noreferrer"
+                >rapidSnark</a
+              >
+              written in C++ and Intel Assembly. Our team is currently working
+              in the development of RapidPLONK and a run-time architecture for
+              ARM processors.
+            </p>
+            <p>
+              This way, Circom aims to provide developers a holistic framework
+              to construct arithmetic circuits through an easy-to- use interface
+              and abstract the complexity of the proving mechanisms.
+            </p>
+          </div>
+        </div>
+        <hr class="separator" />
+        <div class="small-feature-list">
+          <div class="small-feature">
+            <img src="img/icons/efficient.svg" />
+            <p class="body-1 small-feature-text">Efficient</p>
+          </div>
+          <div class="small-feature">
+            <img src="img/icons/open-sourcce.svg" />
+            <p class="body-1 small-feature-text">Open Source</p>
+          </div>
+          <div class="small-feature">
+            <img src="img/icons/flexible.svg" />
+            <p class="body-1 small-feature-text">Flexible</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-black">
+      <div class="section-content">
+        <h2>Features</h2>
+        <div class="feature">
+          <h3>Expressivity and balance</h3>
+          <div class="flex-layout">
+            <div class="flex-col">
+              <p>
+                Circom closes the gap between developers and privacy-preserving
+                technologies to impulse full adoption of the privacy by design
+                framework.
+              </p>
+              <p>
+                The main concept is to keep a fair balance between the
+                flexibility and full control of the arithmetic circuit designs
+                written in a low-level language and the easiness and
+                developer-friendliness of high-level languages.
+              </p>
+            </div>
+            <div class="flex-col">
+              <p>
+                By enabling full control of number of constraints and prevent
+                the inefficiency of redundant linear constraints caused by
+                modularity, Circom highly simplifies the construction process of
+                arithmetic circuits in a reliable and developer-friendly way.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="separator" />
+        <div class="feature">
+          <h3>Reusable components</h3>
+          <div class="flex-layout">
+            <div class="flex-col">
+              <p>
+                CircomLib is an open-source library of templates provided with
+                hundreds of circuits such as comparators, hash functions,
+                digital signatures, binary and decimal convertors, and many
+                more.
+              </p>
+              <p>
+                All templates defined in the Circom libraries have been manually
+                proved and are guaranteed to be safe by construction. The idea
+                of building large and complex circuits from small individual
+                components makes it easier to test, review and audit the
+                resulting code.
+              </p>
+            </div>
+            <div class="flex-col">
+              <p>
+                Circom helps programmers to work in a modular fashion by
+                defining small pieces and combining them to create large
+                circuits that describe complex real-world problems.
+              </p>
+              <p>
+                Users can create their own custom templates, but using circuits
+                from the library has the advantage to having been reviewed by
+                our research team and our supporting open-source community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="separator" />
+        <div class="feature">
+          <h3>Efficient Compiler</h3>
+          <div class="flex-layout">
+            <div class="flex-col">
+              <p>
+                The architecture behind Circom provides a holistic framework for
+                building privacy-enabled applications.
+              </p>
+              <p>
+                In addition to constructing efficient arithmetic circuits and
+                generating their constraints, it also abstracts the complexity
+                of the underlying proving mechanism.
+              </p>
+              <p>
+                Circom can be completed by SnarkJS, our zk-Snark tool developed
+                to automatize the generation and verification of proofs. The
+                crypto-compiler also generates smart contract code for the proof
+                verification, concretely Solidity code, which is one of the most
+                widely used languages for writing smart contracts.
+              </p>
+            </div>
+            <div class="flex-col">
+              <p>
+                The novelty of our architecture relies on separating the
+                description of the computational problem from the specific ZK
+                protocol and it has always been conceived as an adaptable
+                compiler to other arithmetic circuit encodings.
+              </p>
+              <p>
+                Furthermore, our framework covers the trusted setup phase
+                through the multi-party computation (MPC) generation, which
+                allows independent parties to set collaboratively the trusted
+                setup parameters.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="separator" />
+        <div class="feature">
+          <h3>Community-oriented</h3>
+          <div class="flex-layout">
+            <div class="flex-col">
+              <p>
+                Circom is largely a community-driven project, with an active
+                <a
+                  class="inline-link"
+                  href="https://t.me/iden3io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Telegram chat</a
+                >
+                and the support from venture-capital investors of the web3
+                success-story Dark Forest.
+              </p>
+              <p>
+                Circom receives valuable contributions from developers from the
+                entire world, among them Ethereum Foundation Grant recipients,
+                who help us reviewing the circuits library.
+              </p>
+            </div>
+            <div class="flex-col">
+              <p>
+                Circom itself has received a grant from the Ethereum Foundation,
+                which helped the project to move past its first phase with
+                Circom 2.0.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-grey">
+      <div class="section-content">
+        <h2>Integration with Zero-Knowledge SNARK proving systems</h2>
+        <div class="flex-layout">
+          <div class="flex-col">
+            <h3>Groth16 (Snark)</h3>
+            <ul class="checklist">
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Considerably small proof size</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Faster proving and verification speed</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Technically mature proof widely used in many projects</p>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-col">
+            <h3>PLONK</h3>
+            <ul class="checklist">
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Universal trusted setup</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Multi-party computation (MPC) integrated by design</p>
+              </li>
+              <li class="checklist-item">
+                <img src="img/icons/check.svg" class="checklist-item-bullet" />
+                <p>Great scalability</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-black">
+      <div class="section-content">
+        <h2>References</h2>
+        <h3>Circom 2.0 in depth review</h3>
+        <div class="flex-layout">
+          <div class="flex-col">
+            <p class="references-description">
+              Following the links below you can find further detailed technical
+              information about Circom 2.0, such as: documentation, Github
+              repository and related research articles and videos.
+            </p>
+            <div class="external-links">
+              <hr class="separator" />
+              <a
+                href="https://docs.circom.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-link-content"
+              >
+                <p class="external-link-text">Documentation</p>
+                <img src="img/icons/arrow-right.svg" />
+              </a>
+              <hr class="separator" />
+              <a
+                href="https://github.com/iden3/circom"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-link-content"
+              >
+                <p class="external-link-text">Circom GitHub</p>
+                <img src="img/icons/arrow-right.svg" />
+              </a>
+              <hr class="separator" />
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="external-links">
+              <hr class="separator" />
+              <a
+                href="https://ieeexplore.ieee.org/document/9446757"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-link-content"
+              >
+                <p class="external-link-text">IEEE Research article</p>
+                <img src="img/icons/arrow-right.svg" />
+              </a>
+              <hr class="separator" />
+              <a
+                href="https://www.youtube.com/watch?v=6XxVeBFmIFs&t=1232s"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-link-content"
+              >
+                <p class="external-link-text">
+                  Intro to Circom 2.0 from ZK-Hack
+                </p>
+                <img src="img/icons/arrow-right.svg" />
+              </a>
+              <hr class="separator" />
+              <div class="external-link-content">
+                <p class="external-link-text">Dan Boneh lectures</p>
+                <img src="img/icons/arrow-right.svg" />
+              </div>
+              <hr class="separator" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-grey">
+      <div class="section-content">
+        <h2 class="community-title">Battle tested and embraced by community</h2>
+        <p class="community-description">
+          Circom and SnarkJS have been successfully used for building several
+          projects currently in production within the Ethereum network
+        </p>
+        <div class="community-logo-list">
+          <a
+            href="https://tornado.cash"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="community-logo"
+          >
+            <img src="img/logos/tornado.svg" />
+          </a>
+          <a
+            href="https://hermez.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="community-logo"
+          >
+            <img src="img/logos/hermez.svg" />
+          </a>
+          <a
+            href="https://zkga.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="community-logo"
+          >
+            <img src="img/logos/zkopru.svg" />
+          </a>
+          <a
+            href="https://zkga.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="community-logo"
+          >
+            <img src="img/logos/dark-forest.svg" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="section section-black">
+      <div class="section-content footer-content">
+        <div class="footer-col">
+          <h2 class="footer-cta">
+            iden3 supports human progress initiatives.<br />
+            Contact us.
+          </h2>
+        </div>
+        <div class="footer-col">
+          <div class="footer-link-group">
+            <p class="footer-link-header">Email</p>
+            <a
+              href="mailto:hello@iden3.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              hello(at)iden3.io
+            </a>
+          </div>
+          <div class="footer-link-group">
+            <p class="footer-link-header">Twitter</p>
+            <a
+              href="https://twitter.com/identhree"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              @identhree
+            </a>
+          </div>
+          <div class="footer-link-group">
+            <img
+              class="zero-kims-logo"
+              src="img/logos/0kims.svg"
+              alt="0KIMS Association logo"
+            />
+            <p class="footer-text">
+              <a href="http://0kims.org" target="_blank" class="footer-link">
+                0KIMS Association</a
+              >, 2022
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
