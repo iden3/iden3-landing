@@ -1,7 +1,9 @@
 :root {
-  --primary: #111111;
-  --secondary: #2a2a2a;
+  --primary: #7381ff;
+  --secondary: #49d2bb;
   --white: #fff;
-  --black: #000;
-  --grey: #c6c6c6;
+  --black: #111;
+  --grey: #292b30;
+  --text-body: #abb0bc;
+  --section-padding: 104px;
 }

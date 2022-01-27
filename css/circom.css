@@ -1,0 +1,66 @@
+/** Hero **/
+.hero-bg {
+  background: url("../img/circom-hero.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.circom-logo {
+  margin-bottom: 24px;
+}
+
+/** Circom 2.0 **/
+.circom-description {
+  margin-bottom: 56px;
+}
+
+.circom-description p:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+/** References **/
+.references-description {
+  margin-bottom: 24px;
+}
+
+.external-link-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.external-link-text {
+  color: var(--white);
+  margin: 16px 0;
+}
+
+.external-link-content:hover .external-link-text {
+  color: var(--text-body);
+}
+
+/** Battle tested and embraced by community **/
+.community-description {
+  width: 100%;
+  max-width: 816px;
+  margin: auto;
+}
+
+.community-title,
+.community-description {
+  text-align: center;
+}
+
+.community-logo-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.community-logo {
+  display: flex;
+}
+
+.community-logo:hover svg {
+  fill: var(--white);
+}
