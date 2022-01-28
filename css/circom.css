@@ -47,6 +47,10 @@
   color: var(--color-text-body);
 }
 
+.external-link-content:hover circle {
+  fill: var(--color-white);
+}
+
 /** Battle tested and embraced by community **/
 .community-description {
   width: 100%;
@@ -67,9 +71,10 @@
 
 .community-logo {
   display: flex;
+  align-items: center;
 }
 
-.community-logo:hover svg {
+.community-logo:hover path {
   fill: var(--color-white);
 }
 
