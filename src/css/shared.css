@@ -200,6 +200,10 @@ h3 {
   display: none;
 }
 
+.mobile-menu-button:hover rect {
+  fill: var(--color-white);
+}
+
 /** Hero **/
 .section-hero {
   padding-top: 184px;
