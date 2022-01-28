@@ -86,15 +86,6 @@ h3 {
 }
 
 /** Helpers **/
-.body-1 {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 28px;
-  color: var(--color-text-body);
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
 .flex-layout {
   display: flex;
   justify-content: space-between;
@@ -107,23 +98,6 @@ h3 {
 .two-column-layout {
   columns: 2 400px;
   column-gap: 4em;
-}
-
-.link {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  color: var(--color-text-body);
-  letter-spacing: 0.02em;
-}
-
-.link-active {
-  pointer-events: none;
-}
-
-.link:hover,
-.link-active {
-  color: var(--color-white);
 }
 
 .inline-link {
@@ -205,8 +179,25 @@ h3 {
   margin: 0;
 }
 
-.header-nav-link:last-of-type {
+.header-nav-link-container:last-of-type {
   margin-left: 40px;
+}
+
+.header-nav-link {
+  letter-spacing: 0.02em;
+}
+
+.header-nav-link-active {
+  pointer-events: none;
+}
+
+.header-nav-link:hover,
+.header-nav-link-active {
+  color: var(--color-white);
+}
+
+.mobile-menu-button {
+  display: none;
 }
 
 /** Hero **/
@@ -238,6 +229,9 @@ h3 {
 }
 
 .small-feature-text {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   margin-top: 32px;
   text-align: center;
 }
@@ -345,21 +339,52 @@ h3 {
   }
 
   .section.section-hero {
-    padding-top: 480px;
-    padding-bottom: 64px;
+    padding-top: 286px;
+    padding-bottom: 40px;
   }
 
   .flex-layout {
     flex-direction: column;
   }
 
+  .header-content {
+    justify-content: flex-end;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 4px;
+  }
+
   .small-feature-list {
-    margin-top: 64px;
+    margin-top: 48px;
     flex-direction: column;
   }
 
   .small-feature {
-    margin-bottom: 64px;
+    margin-bottom: 48px;
+  }
+
+  .small-feature-text {
+    margin-top: 24px;
+  }
+
+  .feature:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+
+  .feature:not(:first-of-type) {
+    margin-top: 40px;
+  }
+
+  .feature p:not(:last-of-type) {
+    margin-bottom: 16px;
   }
 
   .checklist:not(:last-of-type) {
@@ -381,5 +406,49 @@ h3 {
 
   .footer-col:not(:first-child) {
     margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  p,
+  a {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  h1 {
+    font-size: 33px;
+    line-height: 38px;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 31px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+
+  .iden3-logo {
+    height: 32px;
+  }
+
+  .header {
+    height: 64px;
+  }
+
+  .header-nav-link {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .footer-cta {
+    font-size: 28px;
+    line-height: 33px;
   }
 }

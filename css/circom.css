@@ -85,6 +85,18 @@
     background-size: cover;
   }
 
+  .circom-logo {
+    display: none;
+  }
+
+  .circom-description {
+    margin-bottom: 48px;
+  }
+
+  .circom-description p:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
+
   .external-links:last-of-type {
     border-bottom: 0;
   }
@@ -101,5 +113,9 @@
 
   .community-logo-list a {
     margin: 20px 0;
+  }
+
+  .community-logo svg {
+    height: 30px;
   }
 }
