@@ -1,9 +1,11 @@
 :root {
-  --primary: #7381ff;
-  --secondary: #49d2bb;
-  --white: #fff;
-  --black: #111;
-  --grey: #292b30;
-  --text-body: #abb0bc;
-  --section-padding: 104px;
+  --color-primary: #7381ff;
+  --color-secondary: #49d2bb;
+  --color-white: #fff;
+  --color-black: #111;
+  --color-grey: #292b30;
+  --color-text-body: #abb0bc;
+  --color-button: #4b5aff;
+  --color-button-hover: #3240d8;
+  --padding-section: 104px;
 }
