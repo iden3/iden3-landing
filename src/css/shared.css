@@ -259,6 +259,7 @@ h3 {
 .checklist-item {
   display: flex;
   align-items: flex-start;
+  page-break-inside: avoid;
 }
 
 .checklist-item-bullet {
