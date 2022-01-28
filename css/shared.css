@@ -104,6 +104,11 @@ h3 {
   flex: 0 1 45%;
 }
 
+.two-column-layout {
+  columns: 2 400px;
+  column-gap: 4em;
+}
+
 .link {
   font-size: 18px;
   font-weight: 400;
@@ -138,7 +143,7 @@ h3 {
 }
 
 .section {
-  padding: var(--padding-section) 0;
+  padding: var(--padding-section-desktop) var(--main-side-padding);
 }
 
 .section-black {
@@ -174,6 +179,7 @@ h3 {
 
 /** Header **/
 .header {
+  padding: 0 var(--main-side-padding);
   height: 80px;
   background: var(--color-black);
   display: flex;
@@ -210,7 +216,7 @@ h3 {
 }
 
 .hero-content {
-  width: 540px;
+  max-width: 540px;
 }
 
 .hero-title {
@@ -270,6 +276,10 @@ h3 {
   margin-bottom: 16px;
 }
 
+.checklist:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
 /** Footer **/
 .footer-content {
   display: flex;
@@ -327,4 +337,49 @@ h3 {
 .zero-kims-logo {
   height: 32px;
   margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 848px) {
+  .section {
+    padding: var(--padding-section-mobile) var(--main-side-padding);
+  }
+
+  .section.section-hero {
+    padding-top: 480px;
+    padding-bottom: 64px;
+  }
+
+  .flex-layout {
+    flex-direction: column;
+  }
+
+  .small-feature-list {
+    margin-top: 64px;
+    flex-direction: column;
+  }
+
+  .small-feature {
+    margin-bottom: 64px;
+  }
+
+  .checklist:not(:last-of-type) {
+    margin-bottom: 32px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-cta {
+    text-align: center;
+  }
+
+  .footer-link-group {
+    align-items: center;
+  }
+
+  .footer-col:not(:first-child) {
+    margin-top: 30px;
+  }
 }
