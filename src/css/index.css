@@ -59,6 +59,19 @@
     margin-bottom: 0;
   }
 
+  .privacy-description {
+    margin-bottom: 40px;
+  }
+
+  .privacy-description p:first-of-type {
+    margin-bottom: 16px;
+  }
+
+  .features-button-container,
+  .circom-button-container {
+    margin-top: 32px;
+  }
+
   .identity-wallet-image-container {
     margin-bottom: calc(var(--padding-section-mobile) * -1);
   }
