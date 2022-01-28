@@ -1,7 +1,7 @@
 /** Hero **/
 .hero-bg {
   background: url("../img/circom-hero.svg");
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
 }
 
@@ -31,12 +31,12 @@
 }
 
 .external-link-text {
-  color: var(--white);
+  color: var(--color-white);
   margin: 16px 0;
 }
 
 .external-link-content:hover .external-link-text {
-  color: var(--text-body);
+  color: var(--color-text-body);
 }
 
 /** Battle tested and embraced by community **/
@@ -62,5 +62,5 @@
 }
 
 .community-logo:hover svg {
-  fill: var(--white);
+  fill: var(--color-white);
 }
