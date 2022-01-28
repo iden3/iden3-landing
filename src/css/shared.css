@@ -417,7 +417,7 @@ h3 {
 @media only screen and (max-width: 510px) {
   p,
   a {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
   }
 
@@ -434,7 +434,7 @@ h3 {
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     margin-bottom: 8px;
   }
