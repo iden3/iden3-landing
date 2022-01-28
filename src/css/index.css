@@ -1,6 +1,6 @@
 /** Hero **/
 .hero-bg {
-  background: url("../img/iden3-hero.svg");
+  background: url("../img/iden3-hero.jpg");
   background-position: bottom;
   background-size: cover;
 }
@@ -45,5 +45,21 @@
   display: flex;
   justify-content: center;
   margin-top: 56px;
-  margin-bottom: calc(var(--padding-section) * -1);
+  margin-bottom: calc(var(--padding-section-desktop) * -1);
+}
+
+@media only screen and (max-width: 848px) {
+  .hero-bg {
+    background: url("../img/iden3-hero-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .iden3-hero-description {
+    margin-bottom: 0;
+  }
+
+  .identity-wallet-image-container {
+    margin-bottom: calc(var(--padding-section-mobile) * -1);
+  }
 }
