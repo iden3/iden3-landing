@@ -308,11 +308,16 @@ h3 {
 .footer-link-header {
   margin-top: 0;
   margin-bottom: 2px;
+  color: var(--color-white);
 }
 
 .footer-link {
   color: var(--color-white);
   text-decoration: underline;
+}
+
+.footer-link:hover {
+  color: var(--color-text-body);
 }
 
 .footer-text {
