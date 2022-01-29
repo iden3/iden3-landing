@@ -350,10 +350,6 @@ h3 {
   overflow-x: hidden;
 }
 
-.mobile-menu-iden3-logo {
-  padding: 16px 30px;
-}
-
 .mobile-menu-content {
   position: relative;
   top: 64px;
@@ -373,11 +369,15 @@ h3 {
   color: #f1f1f1;
 }
 
-.mobile-menu .closebtn {
-  position: absolute;
-  top: 17px;
-  right: 25px;
-  font-size: 60px;
+.close-button {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.close-button:hover rect {
+  fill: var(--color-white);
 }
 
 @media only screen and (max-width: 848px) {
